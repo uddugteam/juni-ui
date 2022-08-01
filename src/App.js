@@ -19,7 +19,8 @@ import Events from './Events'
 import Interactor from './Interactor'
 import Metadata from './Metadata'
 import NodeInfo from './NodeInfo'
-import TemplateModule from './TemplateModule'
+import JuniSetKeyValue from './JuniSetKeyValue'
+import JuniGetKeyValue from './JuniGetKeyValue'
 import Transfer from './Transfer'
 import Upgrade from './Upgrade'
 
@@ -70,6 +71,10 @@ function Main() {
             <BlockNumber />
             <BlockNumber finalized />
           </Grid.Row>
+          <Grid.Row>
+            <JuniSetKeyValue />
+            <JuniGetKeyValue />
+          </Grid.Row>
           <Grid.Row stretched>
             <Balances />
           </Grid.Row>
@@ -80,9 +85,6 @@ function Main() {
           <Grid.Row>
             <Interactor />
             <Events />
-          </Grid.Row>
-          <Grid.Row>
-            <TemplateModule />
           </Grid.Row>
         </Grid>
       </Container>
